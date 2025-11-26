@@ -297,8 +297,9 @@ function App() {
 
       <div className="min-h-screen flex flex-col">
         {/* Header */}
-        <header className="py-6 px-8 fade-in">
-          <h1 className="main-title text-2xl">Sprite → GIF</h1>
+        <header className="py-6 px-8 fade-in text-center">
+          <h1 className="main-title text-2xl">SpriteLoop</h1>
+          <p className="text-[oklch(0.55_0.02_280)] text-sm mt-1">Convert sprite sheets into animated GIFs instantly</p>
         </header>
         
         {/* Main Content - Side by Side */}
@@ -306,7 +307,7 @@ function App() {
           
           {/* Input Panel - Left */}
           <div className="flex-1 glass-card p-5 fade-in fade-in-delay-1 flex flex-col">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center justify-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[oklch(0.75_0.18_180)] to-[oklch(0.65_0.20_200)] flex items-center justify-center">
                 <svg className="w-4 h-4 text-[oklch(0.12_0.02_280)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -378,7 +379,7 @@ function App() {
 
           {/* Result Panel - Right */}
           <div className="flex-1 glass-card p-5 fade-in fade-in-delay-2 flex flex-col">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center justify-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[oklch(0.65_0.22_320)] to-[oklch(0.60_0.20_280)] flex items-center justify-center">
                 <svg className="w-4 h-4 text-[oklch(0.98_0.01_280)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -439,3 +440,4 @@ function App() {
 }
 
 export default App;
+
