@@ -7,11 +7,17 @@
   <img src="https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss" alt="Tailwind CSS">
 </p>
 
+<p align="center">
+  <a href="#english">English</a> | <a href="#日本語">日本語</a>
+</p>
+
+---
+
+## English
+
 A sleek, client-side web app that converts sprite sheets into animated GIFs. Drop your sprite sheet, configure the grid, and download your animation—all in the browser.
 
-![Sprite to GIF Converter](https://via.placeholder.com/800x400/1a1625/75b8b0?text=Sprite+→+GIF+Converter)
-
-## ✨ Features
+### ✨ Features
 
 - **🖱️ Drag & Drop** - Simply drag your sprite sheet onto the drop zone
 - **⚙️ Configurable Grid** - Set rows and columns (1-20) to match your sprite layout
@@ -21,18 +27,25 @@ A sleek, client-side web app that converts sprite sheets into animated GIFs. Dro
 - **🔒 Privacy First** - All processing happens in your browser. No uploads.
 - **🎨 Beautiful UI** - Glassmorphism design with smooth animations
 
-## 🚀 Quick Start
+### 🎬 Demo
 
-### Prerequisites
+**Input: Sprite Sheet (4×4)**
 
-- Node.js 18+ 
-- npm or yarn
+<p align="center">
+  <img src="docs/demo/sprite-sheet.png" alt="Sprite Sheet Input" width="400">
+</p>
 
-### Installation
+**Output: Animated GIF**
+
+<p align="center">
+  <img src="docs/demo/output.gif" alt="Generated GIF Output" width="200">
+</p>
+
+### 🚀 Quick Start
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/sprite-gif-app.git
+git clone https://github.com/akira-tokiwa-GMO/sprite-gif-app.git
 cd sprite-gif-app
 
 # Install dependencies
@@ -44,7 +57,7 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## 📖 Usage
+### 📖 Usage
 
 1. **Upload** - Drag a sprite sheet image onto the drop zone, or click to browse
 2. **Configure** - Click the ⚙️ settings button to adjust:
@@ -72,87 +85,91 @@ Your sprite sheet should be organized in a grid pattern:
 
 Frames are read left-to-right, top-to-bottom.
 
-## 🛠️ Development
-
-### Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server with HMR |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run ESLint |
-
-### Project Structure
-
-```
-src/
-├── App.tsx              # Main application component
-├── main.tsx             # React entry point
-├── index.css            # Global styles & animations
-└── lib/
-    ├── gifConverter.ts  # Core GIF conversion logic
-    └── utils.ts         # Utility functions
-```
-
-### Tech Stack
-
-- **[React 19](https://react.dev/)** - UI framework
-- **[TypeScript](https://www.typescriptlang.org/)** - Type safety
-- **[Vite](https://vitejs.dev/)** - Build tool & dev server
-- **[Tailwind CSS 4](https://tailwindcss.com/)** - Styling
-- **[gif.js](https://jnordberg.github.io/gif.js/)** - GIF encoding
-
-## 🔧 Configuration
-
-Default conversion settings can be modified in `src/lib/gifConverter.ts`:
-
-```typescript
-const DEFAULT_CONFIG: GifConfig = {
-  rows: 4,        // Frame rows
-  cols: 4,        // Frame columns
-  duration: 100,  // Frame delay (ms)
-  quality: 10,    // GIF quality (1-30, lower = better)
-  workers: 2      // Web workers for encoding
-};
-```
-
-## 🌐 Deployment
-
-### Vercel / Netlify
-
-Simply connect your GitHub repository. Both platforms will auto-detect Vite and deploy.
-
-### Manual Build
-
-```bash
-npm run build
-```
-
-Deploy the `dist/` folder to any static hosting service.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
+### 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
+---
 
-- [gif.js](https://jnordberg.github.io/gif.js/) - JavaScript GIF encoder
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Outfit Font](https://fonts.google.com/specimen/Outfit) - Beautiful geometric sans-serif
+## 日本語
+
+スプライトシートをアニメーションGIFに変換するクライアントサイドWebアプリです。スプライトシートをドロップして、グリッドを設定し、アニメーションをダウンロード—すべてブラウザ内で完結します。
+
+### ✨ 機能
+
+- **🖱️ ドラッグ＆ドロップ** - スプライトシートをドロップゾーンにドラッグするだけ
+- **⚙️ グリッド設定** - スプライトのレイアウトに合わせて行数と列数（1〜20）を設定
+- **⏱️ 速度調整** - フレーム間隔を10ms〜500msで調整可能
+- **👀 ライブプレビュー** - ダウンロード前にアニメーションGIFを確認
+- **📥 ワンクリックダウンロード** - 生成したアニメーションを即座にエクスポート
+- **🔒 プライバシー重視** - すべての処理はブラウザ内で完結。サーバーへのアップロードなし
+- **🎨 美しいUI** - グラスモーフィズムデザインとスムーズなアニメーション
+
+### 🎬 デモ
+
+**入力：スプライトシート（4×4）**
+
+<p align="center">
+  <img src="docs/demo/sprite-sheet.png" alt="スプライトシート入力" width="400">
+</p>
+
+**出力：アニメーションGIF**
+
+<p align="center">
+  <img src="docs/demo/output.gif" alt="生成されたGIF出力" width="200">
+</p>
+
+### 🚀 クイックスタート
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/akira-tokiwa-GMO/sprite-gif-app.git
+cd sprite-gif-app
+
+# 依存関係をインストール
+npm install
+
+# 開発サーバーを起動
+npm run dev
+```
+
+ブラウザで [http://localhost:5173](http://localhost:5173) を開きます。
+
+### 📖 使い方
+
+1. **アップロード** - スプライトシート画像をドロップゾーンにドラッグ、またはクリックしてファイルを選択
+2. **設定** - ⚙️ 設定ボタンをクリックして調整：
+   - **行数**: スプライトシートのフレーム行数
+   - **列数**: スプライトシートのフレーム列数
+   - **速度**: フレームあたりのミリ秒（小さいほど速い）
+3. **プレビュー** - 結果パネルでアニメーションを確認
+4. **ダウンロード** - ダウンロードボタンをクリックしてGIFを保存
+
+### スプライトシートのフォーマット
+
+スプライトシートはグリッドパターンで構成します：
+
+```
+┌─────┬─────┬─────┬─────┐
+│  1  │  2  │  3  │  4  │
+├─────┼─────┼─────┼─────┤
+│  5  │  6  │  7  │  8  │
+├─────┼─────┼─────┼─────┤
+│  9  │ 10  │ 11  │ 12  │
+├─────┼─────┼─────┼─────┤
+│ 13  │ 14  │ 15  │ 16  │
+└─────┴─────┴─────┴─────┘
+```
+
+フレームは左から右、上から下の順に読み込まれます。
+
+### 📄 ライセンス
+
+このプロジェクトはオープンソースであり、[MITライセンス](LICENSE)の下で利用可能です。
 
 ---
 
 <p align="center">
-  Made with ❤️ for sprite animators everywhere
+  Made with ❤️ for sprite animators everywhere<br>
+  スプライトアニメーターのために ❤️ を込めて
 </p>
